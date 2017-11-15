@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+
+  form(method="POST" enctype="multipart/form-data" action="/monupload")
+    br
+    input(type="file" accept="" name="picture" multiple)
+    br
+    button(type="submit") Enregistrer
